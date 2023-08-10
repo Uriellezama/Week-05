@@ -1,4 +1,7 @@
+//Object with traits that can be arrranged, songs
 //We're going to make a playlist and songs in those playlist
+
+//We will need a song and a playlist to hold them. 
 class Song{
 constructor(name, artist) {
 this.name = name;
@@ -10,6 +13,7 @@ return `${this.name} is by ${this.artist}`;
 }
 }
 
+//class to hold the items
 class Playlist {
 constructor(name) {
 this.name = name;
@@ -29,6 +33,8 @@ describe() {
 return `${this.name} has ${this.song.length} songs.`;
 }
 }
+
+//Menu to hold the prompts
 
 class Menu { // what drives the application and our choices
 constructor() {
@@ -132,6 +138,8 @@ if (index > -1 && index < this.selectedPlaylist.song.length) { this.selectedPlay
 }
 }
 }
+
+// comand code for start
 
 let menu = new Menu();
 menu.start();
